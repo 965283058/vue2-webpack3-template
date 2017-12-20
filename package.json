@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "version": "0.0.5",
+  "dependencies": {
+    "vt-cell": "^1.0.2",
+    "vt-datetime-picker": "^1.0.5",
+    "vt-picker": "^1.0.2",
+    "vt-tree": "^1.0.5",
+    "vue": "^2.5.3",
+    "vue-http": "^1.0.10",
+    "vue-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-px2rem": "^0.3.0",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "url-loader": "^0.6.2",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.3",
+    "webpack": "^3.8.1",
+    "webpack-dashboard": "^1.0.2",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "./node_modules/.bin/webpack --config ./build/webpack.dev.conf.js --display-modules --display-chunks",
+    "build": "rm -rf dist&&./node_modules/.bin/webpack --config ./build/webpack.prod.conf.js --display-modules --display-chunks",
+    "dll": "rm -rf dll&&./node_modules/.bin/webpack --config ./build/webpack.dll.conf.js --display-modules --display-chunks"
+  }
+}
