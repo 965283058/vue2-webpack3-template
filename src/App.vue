@@ -288,6 +288,7 @@
         font-size: 20px;
         line-height: 30px;
         color: red;
+        background-color: gold;
     }
 </style>
 

@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const DashboardPlugin = require('webpack-dashboard/plugin');
 
 const path = require('path')
+const dllPath='./dll/manifest.json'
 
 module.exports = merge(base, {
     plugins: [
@@ -19,8 +20,8 @@ module.exports = merge(base, {
         new webpack.NoEmitOnErrorsPlugin(),
         new DashboardPlugin({port: 8080}),
         new webpack.DllReferencePlugin({
-            context: __dirname,
-            manifest: require('./dll/manifest.json'),
+            manifest: require(dllPath),
+            name:require(dllPath).name
         })
     ]
 })

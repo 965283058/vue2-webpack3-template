@@ -1,13 +1,12 @@
-// import Vue from 'vue'
-// import App from './App'
-// import Cell from 'vt-cell'
-// import http from 'vue-http'
-// import router from './router'
-// import picker from 'vt-picker'
-// import datetimePicker from 'vt-datetime-picker'
-// import Tree from 'vt-tree'
+import Vue from 'vue'
+import App from './App'
+import Cell from 'vt-cell'
+import http from 'vue-http'
+import router from './router'
+import picker from 'vt-picker'
+import datetimePicker from 'vt-datetime-picker'
+import Tree from 'vt-tree'
 
-require("myDLL")
 
 /*
 let baseOn=Vue.prototype.$on
@@ -36,11 +35,11 @@ Vue.prototype.$emit=function () {
 
 Vue.use(http, {
     root: process.env.API_ROOT,
-    timeout: 150000,
+    timeout: 100000,
     loading: (bool) => {
-         // Vue.loading(bool)
+         Vue.loading(bool)
     },
-    // error: (text) => Vue.alert({ text })
+     error: (text) => Vue.alert({ text })
 })
 Vue.component('Cell', Cell)
 
